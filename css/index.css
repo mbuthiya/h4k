@@ -1,0 +1,50 @@
+/*colors red-orange = fb3334 Blue = 40e0d0*/
+
+html
+{
+  overflow-x: hidden;
+}
+.banner-section
+{
+  background:
+  /* top, transparent red, faked with gradient */
+  linear-gradient(
+    rgba(0,0,208,0.5),
+    rgba(0,0,208,0.5),
+    rgba(64,224,208,0.5)
+  ),
+  /* bottom, image */
+  url(../Images/mother.jpg) no-repeat top center;
+  background-size: cover;
+
+min-height: 100vh;
+}
+
+.banner-section .logo
+{
+  margin-top: 25vh;
+  margin-bottom: 3vh;
+
+}
+
+.banner-section .banner-text
+{
+  color: white;
+  font-family: Roboto;
+  font-size: 3vw;
+  font-weight: bolder;
+  margin-bottom: 5vh;
+}
+
+.donate-btn{
+  border: 1px solid #fb3334;
+  padding: 1% 3%;
+  font-size: 2vw;
+  color: white;
+  font-family: Roboto;
+  background-color: #fb3334;
+}
+.donate-btn:hover{
+  color: white;
+  text-decoration: none;
+}
