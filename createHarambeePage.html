@@ -3,26 +3,61 @@
   <head>
     <meta charset="utf-8">
     <title>Harambee- </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link href="https://cdn.quilljs.com/1.3.2/quill.snow.css" rel="stylesheet">
   </head>
   <body>
 
     <div class="container">
 
-      <div class="row">
 
-        <div class="col-sm-12 col-md-12 col-lg-12">
-          
+      <div class="row form-row">
 
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <h4 class="text-center">Create a Harambee</h4>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+
+          <form>
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" class="form-control" id="title">
+
+            </div>
+            <div class="form-group">
+              <label for="description">Description Of Harambee</label>
+              <textarea id="editor" class="form-control" rows="20"></textarea>
+
+            </div>
+
+            <div class="form-group">
+              <label for="upload">Upload Image</label>
+              <input type="file" class="form-control" id="title">
+            </div>
+
+            <div class="form-group">
+              <input type="submit" class="btn btn-default" id="submit" value="Submit">
+
+            </div>
+
+
+          </form>
         </div>
 
       </div>
 
     </div>
 
-
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.2/quill.js"></script>
+    <script type="text/javascript" src='js/quilljs.js'></script>
+
   </body>
 </html>
