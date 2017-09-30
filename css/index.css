@@ -22,7 +22,7 @@ min-height: 100vh;
 
 .banner-section .logo
 {
-  margin-top: 25vh;
+  margin-top: 45vh;
   margin-bottom: 3vh;
 
 }
@@ -34,6 +34,12 @@ min-height: 100vh;
   font-size: 3vw;
   font-weight: bolder;
   margin-bottom: 5vh;
+}
+.banner-section .ham{
+  font-size: 3vw;
+  color: white;
+  padding: 2%;
+  cursor: pointer;
 }
 
 .donate-btn{
@@ -47,4 +53,154 @@ min-height: 100vh;
 .donate-btn:hover{
   color: white;
   text-decoration: none;
+}
+
+.about
+{
+  min-height: 30vh;
+}
+.about h4
+{
+  margin-top: 10vh;
+  margin-bottom: 3vh;
+  font-family: Roboto;
+  color: #fb3334;
+  font-weight: bold;
+  font-size: 3vw;
+
+}
+.about p
+{
+  font-family: Roboto;
+  font-size: 2vw;
+
+}
+
+.trans-counter
+{
+  min-height: 20vh;
+  background:
+  /* top, transparent red, faked with gradient */
+  linear-gradient(
+    rgba(0,0,208,0.5),
+    rgba(0,0,208,0.5),
+    rgba(64,224,208,0.5)
+  ),
+  /* bottom, image */
+  url(../Images/sickblack.jpg) no-repeat top center;
+  background-size: cover;
+}
+.trans-counter h5
+{
+  margin-top: 10vh;
+  font-family: Roboto;
+  color: #fb3334;
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+.active-Harambees{
+  min-height: 30vh;
+}
+.active-Harambees h4{
+  margin-top: 10vh;
+  font-size: 3vh;
+  color: #ff4800;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 3vw;
+
+}
+.active-Harambees h5{
+  color: #ff4800;
+  font-family: Roboto;
+  margin-bottom: 2vh;
+}
+.active-Harambees img{
+  padding: 1%;
+}
+
+.footer-section
+{
+  background: #ff4800;
+}
+.footer-section ul
+{
+  list-style-type: none;
+}
+.footer-section h5
+{
+  margin-top: 10vh;
+  text-decoration: underline;
+  font-family: Roboto;
+  color: #fff;
+  font-weight: bold;
+  font-size: 3vh;
+}
+.footer-section li,.footer-section li a
+{
+  font-family: Roboto;
+  color: #fff;
+  text-align: center;
+}
+.footer-section li:hover
+{
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 480px) {
+
+  .trans-counter
+  {
+    margin-top: 30vh;
+    min-height: 60vh;
+  }
+
+  .trans-counter h5
+  {
+    margin-top: 30vh;
+    font-size: 3vw;
+  }
+
+
+}
+
+@media screen and (max-width: 479px)
+{
+  .banner-section .logo
+  {
+    min-width: 28vw;
+    height: auto;
+
+  }
+
+  .banner-section .banner-text
+  {
+
+    font-size: 6vw;
+
+  }
+
+  .donate-btn{
+    font-size: 4vw;
+
+  }
+
+  .about h4
+  {
+
+    font-size: 6vw;
+
+  }
+  .about p
+  {
+    font-family: Roboto;
+    font-size: 3vw;
+
+  }
+  .banner-section .ham{
+    font-size: 6vw;
+    padding: 3%;
+
+  }
 }
